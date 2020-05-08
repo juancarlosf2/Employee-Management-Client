@@ -1,0 +1,64 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px, 10%;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px, 10%;
+  width: 100%;
+  height: 82px;
+  background-color: var(--secondary-bg-color);
+  box-shadow: var(--shadows);
+}
+
+.logo {
+  text-decoration: none;
+  font-family: raleway;
+  text-shadow: var(--shadows);
+  font-size: 49px;
+  color: var(--text-color);
+  opacity: 87%;
+  margin: 20px 2.5%;
+  padding-bottom: 5px;
+}
+
+.logo img {
+  height: 56px;
+  width: 56px;
+  position: relative;
+  top: 10px;
+}
+.btn {
+  border-style: none;
+  background-color: #e3c4a8;
+  opacity: 87%;
+  width: 209px;
+  height: 56px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px #00000042;
+  margin-left: auto;
+  margin-right: 5%;
+  transition: all 0.5s ease 0;
+}
+.btn span {
+  color: var(--secondary-bg-color);
+  font-family: lato;
+  font-size: 25px;
+  margin-right: 2px;
+  margin-bottom: 0.5em;
+}
+.btn svg {
+  fill: var(--secondary-bg-color);
+  margin-top: 0.5em;
+  position: relative;
+  size: 29px;
+}
+.btn:hover {
+  opacity: 90%;
+}

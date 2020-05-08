@@ -1,0 +1,95 @@
+.title,
+th {
+  font-family: lato;
+  text-decoration: none;
+}
+td {
+  font-family: manrope;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+main {
+  background: var(--main-bg-color);
+  height: 922px;
+}
+
+.title {
+  font-size: 50px;
+  color: var(--text-color);
+  opacity: 87%;
+  text-shadow: (--shadows);
+}
+
+.table {
+  margin-top: 20px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 5px 5px #00000044;
+}
+
+.columns th,
+.rows td {
+  font-size: 25px;
+  padding: 10px 10px;
+}
+
+.columns th {
+  background-color: #226089;
+  box-shadow: var(--shadows);
+  color: var(--text-color);
+}
+
+.rows td {
+  color: var(--secondary-bg-color);
+  opacity: 87%;
+  font-size: 18px;
+}
+
+.rows:nth-child(even) {
+  background-color: #4191af;
+}
+
+.rows:nth-child(odd) {
+  background-color: #2a5667;
+  opacity: 100%;
+}
+
+button {
+  border-radius: 15px;
+  border-style: none;
+  margin: 2px;
+  height: 37px;
+  width: 56px;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px #00000044;
+}
+button:hover {
+  opacity: 100%;
+}
+.btn-detail {
+  background-color: #e3c4a8;
+  opacity: 87%;
+  transition: all 0.3s ease 0;
+  position: relative;
+  padding-top: 4px;
+  top: 1px;
+}
+.btn-detail svg {
+  fill: var(--main-bg-color);
+}
+.btn-delete {
+  background-color: var(--secondary-bg-color);
+  opacity: 87%;
+  transition: all 0.3s ease 0;
+}
+.btn-delete svg {
+  fill: var(--text-color);
+}

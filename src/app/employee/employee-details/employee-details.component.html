@@ -1,0 +1,69 @@
+<main>
+  <div class="container">
+    <h1 class="title">{{ employee?.firstname }} Details</h1>
+    <div class="form-group">
+      <div class="column">
+        <div class="form-control">
+          <label>name</label>
+          <input type="text" [(ngModel)]="employee.firstname" id="firstname" />
+        </div>
+        <div class="form-control">
+          <label>lastname</label>
+          <input type="text" [(ngModel)]="employee.lastname" id="lastname" />
+        </div>
+      </div>
+      <div class="column">
+        <div class="form-control">
+          <label>email</label>
+          <input type="text" [(ngModel)]="employee.email" id="email" />
+        </div>
+        <div class="form-control">
+          <label>phone</label>
+          <input type="text" [(ngModel)]="employee.phone" id="phone" />
+        </div>
+      </div>
+      <div class="form-control">
+        <label>notes</label>
+        <textarea
+          name="notes"
+          id="notes"
+          cols="30"
+          rows="5"
+          [(ngModel)]="employee.notes"
+        ></textarea>
+      </div>
+      <div class="form-buttons">
+        <button (click)="onDelete(employee)" class="btn-delete">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="40"
+            viewBox="0 0 24 24"
+            width="40"
+          >
+            <path
+              d="M15 16h4v2h-4zm0-8h7v2h-7zm0 4h6v2h-6zM3 18c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2V8H3v10zM14 5h-3l-1-1H6L5 5H2v2h12z"
+            />
+            <path d="M0 0h24v24H0z" fill="none" />
+          </svg>
+        </button>
+        <button
+          class="btn-update"
+          [routerLink]="['/update-employee', employee.id]"
+        >
+          <span> update</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+          >
+            <path
+              d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+            />
+            <path d="M0 0h24v24H0z" fill="none" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>

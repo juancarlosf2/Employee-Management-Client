@@ -1,0 +1,132 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+main {
+  background: var(--main-bg-color);
+  height: 922px;
+}
+
+h1,
+label,
+button {
+  font-family: lato;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 50px;
+  color: var(--text-color);
+  text-shadow: var(--shadows);
+  opacity: 87%;
+}
+
+.form-group {
+  margin-top: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 30px 60px;
+  background-color: var(--secondary-bg-color);
+  box-shadow: 5px 3px 10px #00000044;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.column {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-width: 25vh;
+  -moz-column-width: 25vh;
+  column-width: 25vh;
+}
+.form-control label {
+  text-transform: capitalize;
+  color: var(--text-color);
+  opacity: 87%;
+  text-shadow: var(--shadows);
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.form-control input {
+  text-decoration: none;
+  background-color: var(--secondary-bg-color);
+  height: 50px;
+  border-width: 1px;
+  box-shadow: var(--shadows) inset;
+  border-color: var(--text-color);
+  opacity: 87%;
+  border-style: groove;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  font-size: 18px;
+  padding: 4px 10px;
+  font-family: manrope;
+}
+
+#notes {
+  font-family: manrope;
+  text-decoration: none;
+  background-color: var(--secondary-bg-color);
+  border-width: 1px;
+  box-shadow: var(--shadows) inset;
+  border-color: var(--text-color);
+  opacity: 87%;
+  border-style: groove;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  font-size: 18px;
+  padding: 4px 10px;
+  width: 100%;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  border-radius: 15px;
+  border-style: none;
+  height: 50px;
+  width: 40%;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px #00000044;
+}
+.btn-update span {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: var(--secondary-bg-color);
+}
+button:hover {
+  opacity: 100%;
+}
+.btn-update {
+  background-color: #e3c4a8;
+  opacity: 87%;
+  transition: all 0.3s ease 0;
+}
+.btn-update svg {
+  fill: var(--secondary-bg-color);
+  position: relative;
+  margin-top: 1px;
+  left: 2px;
+  top: 3px;
+}
+.btn-delete {
+  background-color: var(--text-color);
+  opacity: 87%;
+  transition: all 0.3s ease 0;
+}
+.btn-delete svg {
+  fill: var(--secondary-bg-color);
+}

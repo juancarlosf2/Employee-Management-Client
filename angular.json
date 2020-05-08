@@ -117,8 +117,16 @@
               "devServerTarget": "employee-management:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "employee-management"
+    }
+  },
+  "defaultProject": "employee-management",
+  "cli": {
+    "analytics": false
+  }
 }

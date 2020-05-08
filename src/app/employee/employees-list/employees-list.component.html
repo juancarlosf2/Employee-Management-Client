@@ -1,0 +1,46 @@
+<main>
+  <div class="container">
+    <h1 class="title">Employee Management</h1>
+    <table class="table">
+      <tr class="columns">
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Options</th>
+      </tr>
+      <tr *ngFor="let employee of employees" class="rows">
+        <td>{{ employee.firstname }} {{ employee.lastname }}</td>
+        <td>{{ employee.email }}</td>
+        <td>{{ employee.phone }}</td>
+        <td>
+          <button class="btn-detail" [routerLink]="['/details', employee.id]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M11.5 9C10.12 9 9 10.12 9 11.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5S12.88 9 11.5 9zM20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-3.21 14.21l-2.91-2.91c-.69.44-1.51.7-2.39.7C9.01 16 7 13.99 7 11.5S9.01 7 11.5 7 16 9.01 16 11.5c0 .88-.26 1.69-.7 2.39l2.91 2.9-1.42 1.42z"
+              />
+            </svg>
+          </button>
+          <button class="btn-delete" (click)="onDelete(employee)">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path
+                d="M15 16h4v2h-4zm0-8h7v2h-7zm0 4h6v2h-6zM3 18c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2V8H3v10zM14 5h-3l-1-1H6L5 5H2v2h12z"
+              />
+              <path d="M0 0h24v24H0z" fill="none" />
+            </svg>
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</main>
